@@ -1,0 +1,23 @@
+{
+  "name": "surplus-dist",
+  "version": "0.5.0-beta9",
+  "description": "",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irisjay/surplus-dist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irisjay/surplus-dist/issues"
+  },
+  "homepage": "https://github.com/irisjay/surplus-dist#readme",
+  "dependencies": {
+    "browserify": "^15.2.0",
+    "surplus": "^0.5.0-beta9"
+  },
+  "scripts": {
+    "regen": "browserify --require surplus --standalone Surplus > dist.js"
+  }
+}
