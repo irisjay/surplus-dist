@@ -1035,7 +1035,9 @@ function createTextNode(text, parent) {
     return node;
 }
 function setAttribute(node, name, value) {
-    if (value === false || value === null || value === undefined)
+    if (name.startsWith(":"))
+        node.setAttribute(name.slice(":".length), value);
+    else if (value === false || value === null || value === undefined)
         node.removeAttribute(name);
     else if (name.startsWith("xlink:"))
         node.setAttributeNS("http://www.w3.org/1999/xlink", name.slice("xlink:".length), value);
