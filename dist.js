@@ -1090,6 +1090,7 @@ exports.createSvgElement = createSvgElement;
 exports.createComment = createComment;
 exports.createTextNode = createTextNode;
 exports.setAttribute = setAttribute;
+exports.setAttributeNS = setAttributeNS;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
