@@ -15,7 +15,7 @@
   "homepage": "https://github.com/irisjay/surplus-dist#readme",
   "dependencies": {
     "browserify": "^15.2.0",
-    "surplus": "^0.5.0-beta9"
+    "surplus": "git+https://github.com/irisjay/iris-surplus.git#namespace-support"
   },
   "scripts": {
     "regen": "browserify --require surplus --standalone Surplus > dist.js"

@@ -1037,6 +1037,8 @@ function createTextNode(text, parent) {
 function setAttribute(node, name, value) {
     if (value === false || value === null || value === undefined)
         node.removeAttribute(name);
+    else if (name.startsWith("xlink:"))
+        node.setAttributeNS("http://www.w3.org/1999/xlink", name.slice("xlink:".length), value);
     else
         node.setAttribute(name, value);
 }
